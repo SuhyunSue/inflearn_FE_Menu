@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document Object</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>        
+    #header-container {
+        display: flex;
+        flex-direction: column; /* 텍스트는 세로로 정렬 */
+        justify-content: flex-start; /* 텍스트와 버튼 위쪽에 배치 */
+        align-items: flex-start; /* 텍스트는 왼쪽 정렬 */
+        width: 100%; /* 전체 너비를 채우도록 */
+        padding: 50px; /* 여백 */
+        background-color: #8dc4ff;
+        color: white;
+        max-width: none;
+    }
+
+    .header-title {
+        text-align: left;
+        margin: 0; /* 여백 제거 */
+        font-size: 80px;
+    }
+
+    .button-container {
+        display: flex;
+        justify-content: flex-end; /* 버튼은 오른쪽 정렬 */
+        width: 90%;
+        margin-top: -70px; /* 텍스트와 버튼 사이의 간격 */
+    }
+
+    .button {
+        background-color: #8dc4ff;
+        padding: 15px 50px;
+        margin-left: 10px; /* 버튼 간의 간격 */
+        border: none;
+        font-size: 20px;
+    }
+
+    .button:hover {
+        transform: scale(1.5);
+        color: white;
+    }
+    
+    .menu-item img {
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+
+    .no-image {
+        margin-left: 192px;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="header-container" class="container-fluid p-5 bg-primary text-white text-center">
+        <h1 id="header-heading" class="header-title">The Inf-Coffee</h1>
+        <div class="button-container">
+            <button class="button" onclick="showMenu('all')" >All menu</button>
+            <button class="button" onclick="showMenu('beverage')">Beverage</button>
+            <button class="button" onclick="showMenu('food')">Food</button>
+        </div>
+    </div>
+    <div id = "menu-container"> 
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+</body>
+
+</html>
